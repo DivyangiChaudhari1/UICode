@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunash Global Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: white;
+            padding: 30px 60px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1600px;
+            margin: auto;
+            padding: 0 30px;
+            font-size: xx-large;
+        }
+        .logo {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 50px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: hsl(0, 0%, 0%);
+            text-decoration: none;
+            font-size: x-large;
+            font-weight: bold;
+            
+        }
+        nav ul li a:hover {
+            color: rgb(245, 156, 97);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://source.unsplash.com/1600x900/?technology,business') no-repeat center/cover;
+            color: #ffffff;
+        }
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: hsl(27, 87%, 67%);
+            color: hsl(0, 0%, 100%);
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: hsl(12, 76%, 61%);
+        }
+        .content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .service-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .service {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .service i {
+            font-size: 40px;
+            color: hsl(27, 87%, 67%);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: auto;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid hsl(0, 0%, 80%);
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px;
+            background: hwb(27 38% 4%);
+            border: none;
+            color: #ffffff;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: hwb(24 31% 9%);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: hsl(0, 0%, 20%);
+            color: #ffffff;
+        }
+        .button-section {
+            display: flex;
+            justify-content: center;
+            gap: 350px;
+            margin: 10px auto;
+            color-scheme: hsl(31, 100%, 50%);
+        }
+        button {
+    background-color: #ff4500; /* Button background */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #00008b; /* Change color on hover */
+}
+.image-section {
+    display: flex; /* Makes images align horizontally */
+    justify-content: center; /* Centers the images */
+    gap: 20px; /* Adds space between the images */
+    text-align: center; /* Centers the text below each image */
+    padding: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+}
+
+.image-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+}
+
+.image-card img {
+    width: 100%; /* Ensures the image fits within the card */
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-card h3 {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.image-card p {
+    font-size: 14px;
+    color: hsl(0, 0%, 33%);
+}
+.image-care {
+    display: flex; /* Aligns image and text in a row */
+    align-items: center; /* Centers them vertically */
+    gap: 20px; /* Adds space between image and text */
+    padding: 20px;
+    max-width: 800px; /* Adjust width as needed */
+    margin: auto;
+}
+
+.image-care img {
+    width: 1000px; /* Adjust image size */
+    height: 400px;;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.text-content {
+    max-width: 500px; /* Adjust width as needed */
+}
+
+.text-content h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: hsl(0, 0%, 33%);
+}
+
+
+.customer-support-header {
+    text-align: center; /* Centers text horizontally */
+    max-width: 800px; /* Adjusts width for better readability */
+    margin: auto; /* Centers the block itself */
+    padding: 20px;
+}
+
+
+
+
+.about-hero {
+            background: #ffffff;
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .about-content {
+            padding: 5rem 5%;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .about-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.1);
+        }
+
+        .about-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .team-section {
+            background: var(--light-bg);
+            padding: 5rem 5%;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .team-member {
+            text-align: center;
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px #0000001a;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+            object-fit: cover;
+        }
+
+        .social-links-member {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links-member a {
+            color: var(--text-color);
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .social-links-member a:hover {
+            color: var(--primary-color);
+        }
+
+        .image-about {
+    display: flex; /* Aligns image and text side by side */
+    align-items: center; /* Vertically centers content */
+    gap: 20px; /* Space between image and text */
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.image-about img {
+    width: 300px; /* Adjust image size */
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-cont {
+    max-width: 600px;
+}
+
+.text-cont h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.text-cont ul {
+    padding-left: 20px; /* Proper indentation for list */
+}
+
+.text-cont li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+
+
+
+
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #e5ff00;
+            padding: 20px;
+        }
+        .blog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .blog-card {
+            background: hsl(0, 0%, 100%);
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px #0000001a;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .blog-content {
+            padding: 15px;
+        }
+        .blog-title {
+            font-size: 20px;
+            color: hsl(0, 0%, 20%);
+            margin-bottom: 10px;
+        }
+        .blog-description {
+            font-size: 14px;
+            color: hsl(0, 0%, 40%);
+            line-height: 1.5;
+        }
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: hsl(211, 100%, 50%);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #ffa500;
+            padding: 20px;
+        }
+        .section-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px #0000001a;
+            max-width: 900px;
+            margin: auto;
+        }
+        .info-box {
+            width: 45%;
+        }
+        .info-box h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .info-box p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+        .form-box {
+            width: 45%;
+            background: hsl(0, 0%, 98%);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .form-box h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .form-box input,
+        .form-box textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid hsl(0, 0%, 87%);
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-box button {
+            width: 100%;
+            padding: 10px;
+            background: hsl(211, 100%, 50%);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .form-box button:hover {
+            background: hsl(211, 100%, 35%);
+        }
+        @media (max-width: 768px) {
+            .section-wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+            .info-box,
+            .form-box {
+                width: 100%;
+            }
+        } */
+        /* recent about contact section */
+        
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        
+        .about-container {
+            max-width: 800px;
+            display: flex;
+        }
+        .about-container h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: hsl(0, 0%, 20%);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .about-container p {
+            font-size: 20px;
+            color: hsl(0, 0%, 33%);
+            line-height: 1.6;
+        }
+
+
+
+
+
+        /* #about {
+    padding: 100px 20px;
+    background: #f5f5f5;
+    min-height: 100vh; /* Ensure visibility */
+    */
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./kunashimg.webp" alt="Image" width="200">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <a href="#" class="btn">Get Started</a>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h1 style="font-size:2cm;">Welcome to Kunash Global Solutions</h1>
+        <img src=https://kunashglobalsolutions.com/wp-content/uploads/2024/05/person-hero-2.png alt="image" style="height: 15cm;">
+        <p style="height: 1ch;">At Call Support BPO, we specialize in delivering exceptional customer communication solutions. Available 24/7, we enhance your customer experience, drive satisfaction, and support your business growth.</p><br>
+        <a href="#contact" class="btn">Get Started</a>
+    </section>
+    
+   
+    
+    <section id="services" class="content">
+       
+        <div class="service-list">
+            <div class="service">
+                <i class="fas fa-code"></i>
+                <img src="https://kunashglobalsolutions.com/wp-content/uploads/2025/02/tale-4.png" alt="image">
+                <h3>Telecalling / BPO</h3>
+                <p>Expand your sales with our scalable & Customised BPO & Telecalling solutions. Let us help you make calls to success.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-chart-line"></i>
+                <img src="https://kunashglobalsolutions.com/wp-content/uploads/2025/02/2.png" alt="image">
+                <h3>Customer Service / Help Desk</h3>
+                <p>Develop customer relationships & grow. We offer customer support outsourcing with 24*7 services via phone, email and chat.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-bullhorn"></i>
+                <img src="https://kunashglobalsolutions.com/wp-content/uploads/2025/02/orange-finger-business-customer-logo.jpg" alt="image">
+                <h3>Recruitment & Staffing Support</h3>
+                <p>Our in depth knowledge & industry specific expertise makes us the leading call center recruitment & staffing provider.p</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-bullhorn"></i>
+                <img src="https://kunashglobalsolutions.com/wp-content/uploads/2025/02/sales-flat-orange-color-rounded-vector-icon-FHF2BK.jpg" alt="image">
+                <h3>Inside Sales & Lead Nurturing</h3>
+                <p>Convert potential customers to regular customers with our b2b lead nurturing and sales services.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="content">
+        <h1>Featured Work</h1>
+        <div class="service-list">
+            <div class="service">
+                <i class="fas fa-code"></i>
+                <h3>Featured Work</h3>
+                <p>Discover how Call Support BPO has helped businesses enhance customer experiences and achieve growth. Explore our featured projects to see the impact of our communication expertise and commitment to excellence.</p>
+            </div>
+            
+        </div>
+    </section>
+
+
+<section id="services" class="content">
+<h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service">
+                <i class="fas fa-code"></i>
+                <img src="./customer.img"  alt="Technology">
+                <h3>Inbound Service</h3>
+                <p>Our Inbound Services efficiently handle all incoming calls and inquiries, ensuring prompt and accurate solutions. From customer support to order processing, we prioritize customer satisfaction with professional and friendly assistance.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-chart-line"></i>
+                <img src="./outbound.img"  alt="Business">
+                <h3>Outbound Service</h3>
+                <p>Our Outbound Services are designed to proactively connect with customers for sales, follow-ups, and customer feedback. We focus on building strong customer relationships for helping your business grow and succeed.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-bullhorn"></i>
+                <img src="./websupport.jpeg"alt="Technology">
+                <h3>Web Support</h3>
+                <p>Our Web Support ensures your online presence is always up and running smoothly. From technical assistance to website updates and troubleshooting, we provide prompt and reliable support to keep your digital platforms optimized and user-friendly.</p>
+            </div>
+
+            <section class="button-section">
+                <button>Learn More</button>
+                <button>Learn More</button>
+                <button>Learn More</button>
+            </section>
+            <div class="service">
+                <i class="fas fa-bullhorn"></i>
+                <img src="./reportimg.jpeg" alt="Technology">
+                <h3>Reporting & Analysis </h3>
+                <p>Our Reporting and Analysis services provide detailed insights into your business performance. We deliver accurate reports and in-depth analysis, helping you make informed decisions and optimize your strategies for better growth and efficiency.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-bullhorn"></i>
+                <img src="./educationimg.jpeg" alt="Business">
+                <h3>Education Counselling</h3>
+                <p>Our Education Counselling services guide students in making informed academic and career choices. We provide personalized guidance, helping students explore opportunities, and plan their educational journey for a successful future.</p>
+              
+            </div>
+            <div class="service">
+                <i class="fas fa-bullhorn"></i>
+                <img src="./BPOIMG.jpeg" alt="Technology">
+                <h3>BPO / KPO</h3>
+                <p>Our BPO and KPO services streamline your operations for better productivity. We handle routine tasks through BPO and offer specialized insights with KPO solutions. Grow your business with our cost-effective and reliable support.</p>
+            </div>
+            <
+        </div>
+    </section>
+    <section class="button-section">
+        <button>Learn More</button>
+        <button>Learn More</button>
+        <button>Learn More</button>
+    </section>
+
+
+    <header>
+        
+    <section class="image-section">
+        <div class="image-card">
+            <img src="./women 1.jpeg" alt="Image 1">
+            <h3>KAJAL SHARMA</h3>
+            <p>
+                “We saw a significant increase in website traffic and sales within just a few months. I recommend the marketing agency.“</p>
+        </div>
+        <div class="image-card">
+            <img src="./men 1.jpeg " alt="Image 2">
+            <h3>AKASH SHARMA</h3>
+            <p>“The agency completely transformed our strategy. They’re a true marketing partner, and we’re thrilled with the results.”</p>
+        </div>
+        <div class="image-card">
+            <img src="./women 2.jpeg" alt="Image 3">
+            <h3>SWATI DESHMUKH</h3>
+            <p>“Their expertise and their data-driven approach allowed us to optimize our campaigns for maximum impact.”</p>
+        </div>
+    </section>
+</header>
+
+
+<div class="image-care">
+    <img src="./customercareimg.jpeg" alt="Customer Care Image">
+    <div class="text-content">
+        <h3>Who We Are</h3>
+        <p>Call Support BPO is a trusted partner for businesses seeking comprehensive customer support services. With years of experience and a customer-centric approach, we deliver tailored solutions that align with your business goals. Our team is trained to handle diverse communication needs, ensuring seamless interactions and positive experiences for your customers.</p>
+    </div>
+</div>
+<section class="button-section">
+    <button>Learn More</button>
+    
+</section>
+
+
+<div class="image-care">
+    <div class="text-content">
+        <h1>Why Choose Kunash Global Solutions</h1>
+        <p><ul><li>Professional Expertise: Our team is trained to deliver exceptional customer interactions.</li>
+        <li>  24/7 Availability: We provide round-the-clock support to cater to global customers.</li>
+        <li>Customized Solutions: We understand every business is unique, so our solutions are tailored accordingly.</li>
+        <li>Advanced Technology: Utilizing the latest tools to ensure efficient and secure communication</li>
+    </ul>
+        <img src="./customercae 2img.jpeg" alt="Customer Care Image">
+    </div>
+</div>
+<section class="button-section">
+    <button>Learn More</button>
+    
+</section>
+
+<header class="customer-support-header">
+    
+    <h1>Let’s Work Together on Your Next Customer Support Project</h1>
+    <p>Ready to enhance your customer interactions? Partner with Call Support BPO for professional inbound and outbound call solutions. Whether you need 24/7 support, sales outreach, or customer care, our team is here to help you succeed. Let’s collaborate to elevate your customer experience and grow your business.</p>
+</header>
+
+
+<section class="button-section">
+    <button>Get Started</button>
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- About Hero Section -->
+    
+    <div class="about container">
+        <h1 style=display:accesskey="";>About Us</h1>
+    </div>
+    <!-- Main About Content -->
+    <section id="about" class="about-content">
+        
+        <div class="container">
+            <h2>Our Story</h2>
+            <p>Kunash Global Solutions was founded with a vision to transform businesses through innovative technology solutions. With years of experience in the industry, we've helped numerous organizations achieve their digital transformation goals.</p>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Our Mission</h3>
+                    <p>We deliver exceptional inbound, outbound, and 24/7 customer support to enhance experiences and maximize productivity. Our commitment to innovation, advanced technology, and a dedicated team ensures personalized solutions that meet our clients’ unique needs.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>Our Vision</h3>
+                    <p>To be the leading provider of innovative and reliable customer support solutions, empowering businesses worldwide to build strong connections with their customers.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Our Values</h3>
+                    <p>Innovation, integrity, excellence, and customer satisfaction are the core values that drive everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="image-about">
+        <img src="./ABOUTWOMENIMG.jpeg"alt="Customer Care Image">
+        <div class="text-cont">
+            <h3>About Us</h3>
+            <ul>
+                <li>At Call Support BPO, we are committed to delivering exceptional customer support solutions that help businesses thrive. Specializing in inbound, outbound, and 24/7 customer service, we empower companies to strengthen their communication channels and build meaningful connections with their customers. Our dedicated team of professionals is driven by a passion for excellence, ensuring every interaction is handled with care, efficiency, and a personalized touch.</li>
+                <li>We believe in the power of communication to drive growth and loyalty. Our approach is rooted in integrity, reliability, and a commitment to continuous improvement. At Call Support BPO, we are more than just a service provider – we are your trusted partner in enhancing customer experiences and achieving business success.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <section class="button-section">
+        <button>Book A Call</button>
+        
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            
+            <p>Our success is driven by our talented and dedicated team members.</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src=https://kunashglobalsolutions.com/wp-content/uploads/2024/05/neve-marketing-icon-1.png alt="Team Member">
+                    <h3>Focused on Impact</h3>
+                    <p>We prioritize delivering meaningful results that fuel business growth. At Call Support BPO, our strategic approach and dedicated team ensure every interaction drives success and builds lasting customer connections.</p>
+                    <div class="social-links-member">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src=https://kunashglobalsolutions.com/wp-content/uploads/2024/05/neve-marketing-icon-2.png alt="Team Member">
+                    <h3>Client Collaboration</h3>
+                    <p>We believe in working closely with our clients to understand their needs and goals. At Call Support BPO, collaboration is at the heart of our approach, ensuring tailored solutions that drive success and foster strong partnerships.</p>
+                    <div class="social-links-member">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src=https://kunashglobalsolutions.com/wp-content/uploads/2024/05/neve-marketing-icon-3.1.png alt="Team Member">
+                    <h3>Innovative Insights</h3>
+                    <p>We combine data-driven strategies with creative solutions to deliver impactful results. At Call Support BPO, our approach ensures informed decision-making and innovative customer experiences that drive success.</p>
+                    <div class="social-links-member">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="blogs" class="content">
+        <h2>Your Growth, Our Commitment</h2>
+        <p>We are committed to delivering outstanding customer experiences that drive business success. At Call Support BPO, our dedication to excellence empowers you to achieve your goals.</p>
+    </section>
+
+
+    <header class="customer-support-header">
+    
+        <h1>Ready to Connect?</h1>
+        <p>Have questions or want to learn more about our services? We’re here to help! Reach out to us today, and let’s discuss how we can support your business growth.</p>
+        <section class="button-section">
+            <button>Contact Us</button>
+        </section>
+    </header>
+    
+
+
+    <h1 style="text-align: center; margin-bottom: 20px;">Blogs</h1>
+    
+    <div class="blog-container">
+        <div class="blog-card">
+            <img src=https://kunashglobalsolutions.com/wp-content/uploads/2024/05/neve-marketing-agency-25.png alt="Blog Image">
+            <div class="blog-content">
+                <h2 class="blog-title">Conquering the Marketing Maze: Creative Strategies on a Budget</h2>
+                <p class="blog-description">by kunashmedia / Marketing
+                   <br> Feeling lost in the labyrinth of marketing? You’re not alone. For small businesses and startups, navigating the ever-changing marketing landscape can be daunting, especially when resources are limited. But fear… Read More »</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src=https://kunashglobalsolutions.com/wp-content/uploads/2024/05/neve-marketing-agency-12.png alt="Blog Image">
+            <div class="blog-content">
+                <h2 class="blog-title">The Future of Marketing Automation: Efficiency and Insights</h2>
+                <p class="blog-description">by kunashmedia / Marketing
+                    <br>The marketing landscape is undergoing a seismic shift. Fueled by advancements in artificial intelligence and data analytics, marketing automation is poised to revolutionize the way businesses connect with their customers.… Read More »</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src=https://kunashglobalsolutions.com/wp-content/uploads/2024/05/neve-marketing-agency-15.png alt="Blog Image">
+            <div class="blog-content">
+                <h2 class="blog-title">How Analytics Can Fuel Your Marketing Success</h2>
+                <p class="blog-description">by kunashmedia / Marketing
+                    <br>In today’s data-driven world, marketing success hinges on one crucial element: insights. But where do these insights come from? Enter the power of marketing analytics. By transforming raw data into… Read More »</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    <div class="blog-container">
+        <div class="blog-card">
+            <img src=https://kunashglobalsolutions.com/wp-content/uploads/2024/05/neve-marketing-agency-23.png alt="Blog Image">
+            <div class="blog-content">
+                <h2 class="blog-title">The Ultimate Guide to 2024 Social Media Marketing Trends</h2>
+                <p class="blog-description">by kunashmedia / Marketing
+                   <br>Buckle up, social media enthusiasts! As we hurtle through 2024, the digital landscape continues to evolve at breakneck speed. This guide will equip you with the knowledge to navigate these… Read More »</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src=https://kunashglobalsolutions.com/wp-content/uploads/2024/05/neve-marketing-agency-14.png alt="Blog Image">
+            <div class="blog-content">
+                <h2 class="blog-title">Creative Strategies for Resourceful Teamss</h2>
+                <p class="blog-description">by kunashmedia / Marketing
+                    <br>Tight budgets and limited manpower are realities for many teams. But fear not! Resourcefulness isn’t about having more; it’s about maximizing what you already do have. With a dash of… Read More »</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src=https://kunashglobalsolutions.com/wp-content/uploads/2024/05/neve-marketing-agency-18.png alt="Blog Image">
+            <div class="blog-content">
+                <h2 class="blog-title">How We Helped a Fashion Brand Achieve Their Goal</h2>
+                <p class="blog-description">by kunashmedia / Marketing
+                    <br>In the ever-competitive world of fashion, standing out from the crowd is no easy feat. Recently, we had the pleasure of working with a promising fashion brand, Intimissemi, who were… Read More »</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+    <div class="blog-card">
+        <img src=https://kunashglobalsolutions.com/wp-content/uploads/2024/05/neve-marketing-agency-17.png alt="Blog Image">
+        <div class="blog-content">
+            <h2 class="blog-title">Is Influencer Marketing Still Worth It? Strategies for 2024</h2>
+            <p class="blog-description">by kunashmedia / Marketing
+                <br>The influencer marketing landscape is constantly evolving. While it was once a shiny new tactic, some may wonder if its effectiveness is waning. But fear not, brand strategists! Influencer marketing… Read More »</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<section id="contact"class="team-section">
+    <div class="container">
+        <h1 style="text-align: center; margin-bottom: 20px;">Contact Us</h1>
+        
+        <div class="team-grid">
+            <div class="team-member">
+                <img src=https://kunashglobalsolutions.com/wp-content/uploads/2024/07/neve-marketing-icon-13.png alt="Team Member">
+                <h3>Call US</h3>
+                <p>+91 8080473916 | Monday – Saturday</p>
+                <div class="social-links-member">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src=https://kunashglobalsolutions.com/wp-content/uploads/2024/07/neve-marketing-icon-11.png alt="Team Member">
+                <h3>Email ID</h3>
+                <p>info@kunashglobalsolutions.com</p>
+                <div class="social-links-member">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="https://kunashglobalsolutions.com/wp-content/uploads/2024/07/neve-marketing-icon-12.png" alt="Team Member">
+                <h3>Office Address</h3>
+                <p>Vishwa – Parvati Building, opp. to hanuman sweets, above Canara Bank, Sukh Nagari, Bijali Nagar, Bijlinagar, Akurdi, Pimpri-Chinchwad, Maharashtra 411033
+
+                </p>
+                <div class="social-links-member">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="image-container">
+    <img src="https://kunashglobalsolutions.com/wp-content/uploads/2025/02/Untitled-3.jpg" alt="Sample Image">
+    <div class="overlay-text"><h1>Let’s Connect and Grow Together</h1></div>
+</div>
+
+    
+    
+
+
+
+     
+   
+
+
+
+
+
+
+<div class="section-wrapper">
+<!-- Left Section (Information) -->
+<div class="info-box">
+    <h2>Send us a message or Come visit us</h2>
+    <p>We’d love to hear from you! Whether you have a question, want to learn more about our services, or are ready to collaborate, feel free to get in touch. Drop us a message, and we’ll get back to you promptly.</p>
+    <img src="https://tse1.mm.bing.net/th?id=OIP.ykjbLK_FeaRupHBfq-0NGwHaEK&pid=Api&rs=1&c=1&qlt=95&w=191&h=107" alt="facebook">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.ZPLHcofWB-w5X6z8GZ3IngHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121" alt="instagram">
+    </div>
+<!-- Right Section (Contact Form) -->
+<div class="form-box">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+</div>
+    
+            
+    
+    <footer>
+        <p>&copy; 2025 Kunash Global Solutions. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js">
+        document.addEventListener("DOMContentLoaded", function () {
+    // Smooth scrolling for navigation links
+    document.querySelectorAll("nav ul li a").forEach(anchor => {
+        anchor.addEventListener("click", function (event) {
+            event.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+
+    // Form submission alert
+    const form = document.querySelector("form");
+    if (form) {
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            alert("Thank you for reaching out! We will get back to you soon.");
+            form.reset();
+        });
+    }
+});
+
+
+
+
+
+
+   
+    
+
+
+
