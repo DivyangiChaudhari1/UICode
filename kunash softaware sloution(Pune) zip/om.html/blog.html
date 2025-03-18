@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kunash Global Solutions</title>
+    <style>
+       /* General Reset */
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .logo img {
+            max-width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .cta-button {
+            background-color: #ff7300;
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Blog Section */
+        .blog-section {
+            padding: 100px 5%;
+            max-width: 1100px;
+            margin: auto;
+            text-align: left;
+        }
+
+        .blog-section h1 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .blog-box {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .blog-box h2 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .blog-box p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+
+        .blog-item {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .blog-item h3 {
+            font-size: 1.3rem;
+            margin-top: 15px;
+        }
+
+        .blog-item p {
+            font-size: 1rem;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .blog-item a {
+            text-decoration: none;
+            color: #ff7300;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #ccc;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #ff7300;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #fff;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px 0;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .blog-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .blog-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .blog-card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .blog-card p {
+            font-size: 14px;
+            color: #666;
+        }
+       
+/* Footer */
+footer {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+
+.footer-nav {
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+.developer {
+    color: orange;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="./kunashimg.webp" alt="Kunash Global Solutions">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT US</a></li>
+                <li><a href="Services.html">SERVICES</a></li>
+                <li><a href="blog.html">BLOGS</a></li>
+                <li><a href="contactUs.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="cta-button">Get Started</a>
+    </header>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <h1>Blogs</h1>
+
+        <div class="blog-box">
+            <h2>Hello world!</h2>
+            <p>by kunashmedia / 1 Comment / Blog</p>
+            <p>Welcome to Kunash Global Solutions. This is our first post.</p>
+        </div>
+
+        <div class="blog-grid">
+            <div class="blog-item">
+                <img src="./conquering the marketing.webp" alt="Marketing Strategies">
+                <h3>Conquering the Marketing Maze: Creative Strategies on a Budget</h3>
+                <p>Feeling lost in the labyrinth of marketing? You're not alone. Small businesses and startups...</p>
+                <a href="#">Read More »</a>
+            </div>
+
+            <div class="blog-item">
+                <img src="./The Future of marketing.webp" alt="Marketing Automation">
+                <h3>The Future of Marketing Automation: Efficiency and Insights</h3>
+                <p>The marketing landscape is undergoing a seismic shift, fueled by AI advancements...</p>
+                <a href="#">Read More »</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <body>
+        <div class="container">
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="./How Analytics can fuel.webp" alt="Blog Image">
+                    <h3>How Analytics Can Fuel Your Marketing Success</h3>
+                    <p>By kameshglobal | Marketing</p>
+                    <p>In today's data-driven world, marketing success hinges...</p>
+                </div>
+                <div class="blog-card">
+                    <img src="./The Ultimate Guide.webp" alt="Blog Image">
+                    <h3>The Ultimate Guide to 2024 Social Media Marketing Trends</h3>
+                    <p>By kameshglobal | Marketing</p>
+                    <p>Building a social media brand...</p>
+                </div>
+                <div class="blog-card">
+                    <img src="./creative strategies  for.webp" alt="Blog Image">
+                    <h3>Creative Strategies for Resourceful Teams</h3>
+                    <p>By kameshglobal | Marketing</p>
+                    <p>Tight budgets and limited resources...</p>
+                </div>
+                <div class="blog-card">
+                    <img src="./how we helped.webp" alt="Blog Image">
+                    <h3>How We Helped a Fashion Brand Achieve Their Goal</h3>
+                    <p>By kameshglobal | Marketing</p>
+                    <p>In the ever-competitive world...</p>
+                </div>
+                <div class="blog-card">
+                    <img src="./is influencer marketing.webp" alt="Blog Image">
+                    <h3>Is Influencer Marketing Still Worth It? Strategies for 2024</h3>
+                    <p>By kameshglobal | Marketing</p>
+                    <p>The influencer marketing landscape...</p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Section -->
+    <footer>
+        <div class="footer-nav">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Blogs</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <p class="footer-text">Kunash Global Solutions. <span class="developer">Developed by Divayngi Chaudhari</span></p>
+    </footer>
+
+    </body>
+
+    
+</body>
+</html>
